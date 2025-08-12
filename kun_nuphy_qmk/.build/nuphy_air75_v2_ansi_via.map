@@ -3694,27 +3694,26 @@ END GROUP
                 0x000000000800976a       0x28 .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
                 0x000000000800976a                via_eeprom_is_valid
  .text.via_eeprom_set_valid
-                0x0000000008009792       0x2c .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
+                0x0000000008009792       0x2e .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
                 0x0000000008009792                via_eeprom_set_valid
  .text.via_init_kb
-                0x00000000080097be        0x2 .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
-                0x00000000080097be                via_init_kb
- .text.via_set_layout_options_kb
                 0x00000000080097c0        0x2 .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
-                0x00000000080097c0                via_set_layout_options_kb
+                0x00000000080097c0                via_init_kb
+ .text.via_set_layout_options_kb
+                0x00000000080097c2        0x2 .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
+                0x00000000080097c2                via_set_layout_options_kb
  .text.via_set_layout_options
-                0x00000000080097c2       0x12 .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
-                0x00000000080097c2                via_set_layout_options
+                0x00000000080097c4       0x12 .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
+                0x00000000080097c4                via_set_layout_options
  .text.eeconfig_init_via
-                0x00000000080097d4       0x1e .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
-                0x00000000080097d4                eeconfig_init_via
+                0x00000000080097d6       0x1e .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
+                0x00000000080097d6                eeconfig_init_via
  .text.via_init
-                0x00000000080097f2       0x1c .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
-                0x00000000080097f2                via_init
+                0x00000000080097f4       0x1c .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
+                0x00000000080097f4                via_init
  .text.via_set_device_indication
-                0x000000000800980e        0x8 .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
-                0x000000000800980e                via_set_device_indication
- *fill*         0x0000000008009816        0x2 
+                0x0000000008009810        0x8 .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
+                0x0000000008009810                via_set_device_indication
  .text.process_record_via
                 0x0000000008009818       0x24 .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
                 0x0000000008009818                process_record_via
@@ -5524,7 +5523,7 @@ END GROUP
 OUTPUT(.build/nuphy_air75_v2_ansi_via.elf elf32-littlearm)
 LOAD linker stubs
 
-.debug_info     0x0000000000000000    0xd94bd
+.debug_info     0x0000000000000000    0xd94b1
  .debug_info    0x0000000000000000     0x6117 .build/obj_nuphy_air75_v2_ansi_via/side.o
  .debug_info    0x0000000000006117     0x535f .build/obj_nuphy_air75_v2_ansi_via/rf.o
  .debug_info    0x000000000000b476     0x26ac .build/obj_nuphy_air75_v2_ansi_via/sleep.o
@@ -5563,96 +5562,96 @@ LOAD linker stubs
  .debug_info    0x000000000005c825     0x43a7 .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_rgb.o
  .debug_info    0x0000000000060bcc     0x1654 .build/obj_nuphy_air75_v2_ansi_via/ws2812_bitbang.o
  .debug_info    0x0000000000062220      0x93d .build/obj_nuphy_air75_v2_ansi_via/quantum/led_tables.o
- .debug_info    0x0000000000062b5d     0x2fe3 .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
- .debug_info    0x0000000000065b40     0x2ddc .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_magic.o
- .debug_info    0x000000000006891c     0x42c4 .build/obj_nuphy_air75_v2_ansi_via/quantum/send_string/send_string.o
- .debug_info    0x000000000006cbe0     0x4502 .build/obj_nuphy_air75_v2_ansi_via/quantum/dynamic_keymap.o
- .debug_info    0x00000000000710e2     0x3fd6 .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_grave_esc.o
- .debug_info    0x00000000000750b8     0x2eac .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_key_lock.o
- .debug_info    0x0000000000077f64     0x40be .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_space_cadet.o
- .debug_info    0x000000000007c022     0x2d6c .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_tri_layer.o
- .debug_info    0x000000000007ed8e      0x19c .build/obj_nuphy_air75_v2_ansi_via/quantum/tri_layer.o
- .debug_info    0x000000000007ef2a     0x233d .build/obj_nuphy_air75_v2_ansi_via/protocol/host.o
- .debug_info    0x0000000000081267     0x43b9 .build/obj_nuphy_air75_v2_ansi_via/protocol/report.o
- .debug_info    0x0000000000085620      0x281 .build/obj_nuphy_air75_v2_ansi_via/protocol/usb_device_state.o
- .debug_info    0x00000000000858a1     0x1355 .build/obj_nuphy_air75_v2_ansi_via/platforms/suspend.o
- .debug_info    0x0000000000086bf6     0x12b3 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/platform.o
- .debug_info    0x0000000000087ea9     0x1d47 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/suspend.o
- .debug_info    0x0000000000089bf0      0xb59 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/timer.o
- .debug_info    0x000000000008a749     0x1737 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/bootloaders/stm32_dfu.o
- .debug_info    0x000000000008be80     0x15ff .build/obj_nuphy_air75_v2_ansi_via/uart.a(uart.o)
- .debug_info    0x000000000008d47f     0x3cfd .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/usb_main.o
- .debug_info    0x000000000009117c     0x2087 .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/chibios.o
- .debug_info    0x0000000000093203     0x2264 .build/obj_nuphy_air75_v2_ansi_via/usb_descriptor.o
- .debug_info    0x0000000000095467     0x2fa2 .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/usb_driver.o
- .debug_info    0x0000000000098409      0xb88 .build/obj_nuphy_air75_v2_ansi_via/./lib/chibios/os/oslib/src/chmemcore.o
- .debug_info    0x0000000000098f91      0x369 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/common/startup/ARMCMx/compilers/GCC/crt1.o
- .debug_info    0x00000000000992fa      0xd62 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chsys.o
- .debug_info    0x000000000009a05c      0x7ef .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chrfcu.o
- .debug_info    0x000000000009a84b     0x21b8 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chvt.o
- .debug_info    0x000000000009ca03     0x1146 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chschd.o
- .debug_info    0x000000000009db49      0xada .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chinstances.o
- .debug_info    0x000000000009e623     0x1d42 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chthreads.o
- .debug_info    0x00000000000a0365     0x1935 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chevents.o
- .debug_info    0x00000000000a1c9a      0xd31 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/common/ports/ARMv6-M/chcore.o
- .debug_info    0x00000000000a29cb     0x1315 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal.o
- .debug_info    0x00000000000a3ce0     0x15ef .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_st.o
- .debug_info    0x00000000000a52cf     0x320d .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_buffers.o
- .debug_info    0x00000000000a84dc     0x2d31 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_queues.o
- .debug_info    0x00000000000ab20d     0x1f7a .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_serial.o
- .debug_info    0x00000000000ad187     0x37a1 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_usb.o
- .debug_info    0x00000000000b0928     0x1564 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/common/ARMCMx/nvic.o
- .debug_info    0x00000000000b1e8c     0x1542 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/STM32F0xx/stm32_isr.o
- .debug_info    0x00000000000b33ce     0x147d .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/STM32F0xx/hal_lld.o
- .debug_info    0x00000000000b484b     0x14a4 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.o
- .debug_info    0x00000000000b5cef     0x1774 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.o
- .debug_info    0x00000000000b7463     0x1d90 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/USARTv2/hal_serial_lld.o
- .debug_info    0x00000000000b91f3     0x2a0e .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/USBv1/hal_usb_lld.o
- .debug_info    0x00000000000bbc01     0x1674 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/boards/ST_NUCLEO64_F072RB/board.o
- .debug_info    0x00000000000bd275     0x1694 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/various/syscalls.o
- .debug_info    0x00000000000be909     0x101f .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/syscall-fallbacks.o
- .debug_info    0x00000000000bf928       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_sqi.o)
- .debug_info    0x00000000000bf94e       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
- .debug_info    0x00000000000bf974       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uhi.o)
- .debug_info    0x00000000000bf99a       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
- .debug_info    0x00000000000bf9c0       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
- .debug_info    0x00000000000bf9e6       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_info    0x00000000000bfa0c       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_ashldi3.o)
- .debug_info    0x00000000000bfa32       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
- .debug_info    0x00000000000bfa58      0xb6c /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
- .debug_info    0x00000000000c05c4      0xac0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
- .debug_info    0x00000000000c1084       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
- .debug_info    0x00000000000c10aa       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
- .debug_info    0x00000000000c10d0      0x9b5 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-abort.o)
- .debug_info    0x00000000000c1a85      0xe91 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-ctype_.o)
- .debug_info    0x00000000000c2916      0x92a /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
- .debug_info    0x00000000000c3240      0x9c2 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcmp.o)
- .debug_info    0x00000000000c3c02      0xf35 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcpy-stub.o)
- .debug_info    0x00000000000c4b37      0xf21 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
- .debug_info    0x00000000000c5a58      0xa7a /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-rand.o)
- .debug_info    0x00000000000c64d2      0xd62 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-signal.o)
- .debug_info    0x00000000000c7234      0xa4c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-signalr.o)
- .debug_info    0x00000000000c7c80      0xa41 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-assert.o)
- .debug_info    0x00000000000c86c1      0xa7a /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fprintf.o)
- .debug_info    0x00000000000c913b      0x9b6 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-malloc.o)
- .debug_info    0x00000000000c9af1      0xb82 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-freer.o)
- .debug_info    0x00000000000ca673      0xc57 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-mallocr.o)
- .debug_info    0x00000000000cb2ca     0x1793 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-vfprintf.o)
- .debug_info    0x00000000000cca5d     0x158d /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_info    0x00000000000cdfea      0xb0c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-reent.o)
- .debug_info    0x00000000000ceaf6      0xc90 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-wbuf.o)
- .debug_info    0x00000000000cf786      0xbfa /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-wsetup.o)
- .debug_info    0x00000000000d0380      0xd85 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fflush.o)
- .debug_info    0x00000000000d1105     0x11a8 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-findfp.o)
- .debug_info    0x00000000000d22ad      0xf11 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fvwrite.o)
- .debug_info    0x00000000000d31be      0xca4 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fwalk.o)
- .debug_info    0x00000000000d3e62      0xf64 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-makebuf.o)
- .debug_info    0x00000000000d4dc6      0x9e3 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memchr-stub.o)
- .debug_info    0x00000000000d57a9      0xf2b /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memmove.o)
- .debug_info    0x00000000000d66d4      0x961 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-mlock.o)
- .debug_info    0x00000000000d7035      0xb76 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-reallocr.o)
- .debug_info    0x00000000000d7bab      0xe6c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-stdio.o)
- .debug_info    0x00000000000d8a17      0xaa6 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-msizer.o)
+ .debug_info    0x0000000000062b5d     0x2fd7 .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
+ .debug_info    0x0000000000065b34     0x2ddc .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_magic.o
+ .debug_info    0x0000000000068910     0x42c4 .build/obj_nuphy_air75_v2_ansi_via/quantum/send_string/send_string.o
+ .debug_info    0x000000000006cbd4     0x4502 .build/obj_nuphy_air75_v2_ansi_via/quantum/dynamic_keymap.o
+ .debug_info    0x00000000000710d6     0x3fd6 .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_grave_esc.o
+ .debug_info    0x00000000000750ac     0x2eac .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_key_lock.o
+ .debug_info    0x0000000000077f58     0x40be .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_space_cadet.o
+ .debug_info    0x000000000007c016     0x2d6c .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_tri_layer.o
+ .debug_info    0x000000000007ed82      0x19c .build/obj_nuphy_air75_v2_ansi_via/quantum/tri_layer.o
+ .debug_info    0x000000000007ef1e     0x233d .build/obj_nuphy_air75_v2_ansi_via/protocol/host.o
+ .debug_info    0x000000000008125b     0x43b9 .build/obj_nuphy_air75_v2_ansi_via/protocol/report.o
+ .debug_info    0x0000000000085614      0x281 .build/obj_nuphy_air75_v2_ansi_via/protocol/usb_device_state.o
+ .debug_info    0x0000000000085895     0x1355 .build/obj_nuphy_air75_v2_ansi_via/platforms/suspend.o
+ .debug_info    0x0000000000086bea     0x12b3 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/platform.o
+ .debug_info    0x0000000000087e9d     0x1d47 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/suspend.o
+ .debug_info    0x0000000000089be4      0xb59 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/timer.o
+ .debug_info    0x000000000008a73d     0x1737 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/bootloaders/stm32_dfu.o
+ .debug_info    0x000000000008be74     0x15ff .build/obj_nuphy_air75_v2_ansi_via/uart.a(uart.o)
+ .debug_info    0x000000000008d473     0x3cfd .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/usb_main.o
+ .debug_info    0x0000000000091170     0x2087 .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/chibios.o
+ .debug_info    0x00000000000931f7     0x2264 .build/obj_nuphy_air75_v2_ansi_via/usb_descriptor.o
+ .debug_info    0x000000000009545b     0x2fa2 .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/usb_driver.o
+ .debug_info    0x00000000000983fd      0xb88 .build/obj_nuphy_air75_v2_ansi_via/./lib/chibios/os/oslib/src/chmemcore.o
+ .debug_info    0x0000000000098f85      0x369 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/common/startup/ARMCMx/compilers/GCC/crt1.o
+ .debug_info    0x00000000000992ee      0xd62 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chsys.o
+ .debug_info    0x000000000009a050      0x7ef .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chrfcu.o
+ .debug_info    0x000000000009a83f     0x21b8 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chvt.o
+ .debug_info    0x000000000009c9f7     0x1146 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chschd.o
+ .debug_info    0x000000000009db3d      0xada .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chinstances.o
+ .debug_info    0x000000000009e617     0x1d42 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chthreads.o
+ .debug_info    0x00000000000a0359     0x1935 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chevents.o
+ .debug_info    0x00000000000a1c8e      0xd31 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/common/ports/ARMv6-M/chcore.o
+ .debug_info    0x00000000000a29bf     0x1315 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal.o
+ .debug_info    0x00000000000a3cd4     0x15ef .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_st.o
+ .debug_info    0x00000000000a52c3     0x320d .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_buffers.o
+ .debug_info    0x00000000000a84d0     0x2d31 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_queues.o
+ .debug_info    0x00000000000ab201     0x1f7a .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_serial.o
+ .debug_info    0x00000000000ad17b     0x37a1 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_usb.o
+ .debug_info    0x00000000000b091c     0x1564 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/common/ARMCMx/nvic.o
+ .debug_info    0x00000000000b1e80     0x1542 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/STM32F0xx/stm32_isr.o
+ .debug_info    0x00000000000b33c2     0x147d .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/STM32F0xx/hal_lld.o
+ .debug_info    0x00000000000b483f     0x14a4 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.o
+ .debug_info    0x00000000000b5ce3     0x1774 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.o
+ .debug_info    0x00000000000b7457     0x1d90 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/USARTv2/hal_serial_lld.o
+ .debug_info    0x00000000000b91e7     0x2a0e .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/USBv1/hal_usb_lld.o
+ .debug_info    0x00000000000bbbf5     0x1674 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/boards/ST_NUCLEO64_F072RB/board.o
+ .debug_info    0x00000000000bd269     0x1694 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/various/syscalls.o
+ .debug_info    0x00000000000be8fd     0x101f .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/syscall-fallbacks.o
+ .debug_info    0x00000000000bf91c       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_sqi.o)
+ .debug_info    0x00000000000bf942       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .debug_info    0x00000000000bf968       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uhi.o)
+ .debug_info    0x00000000000bf98e       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_info    0x00000000000bf9b4       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+ .debug_info    0x00000000000bf9da       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x00000000000bfa00       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_ashldi3.o)
+ .debug_info    0x00000000000bfa26       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_info    0x00000000000bfa4c      0xb6c /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
+ .debug_info    0x00000000000c05b8      0xac0 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_info    0x00000000000c1078       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .debug_info    0x00000000000c109e       0x26 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .debug_info    0x00000000000c10c4      0x9b5 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-abort.o)
+ .debug_info    0x00000000000c1a79      0xe91 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-ctype_.o)
+ .debug_info    0x00000000000c290a      0x92a /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .debug_info    0x00000000000c3234      0x9c2 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcmp.o)
+ .debug_info    0x00000000000c3bf6      0xf35 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_info    0x00000000000c4b2b      0xf21 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .debug_info    0x00000000000c5a4c      0xa7a /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-rand.o)
+ .debug_info    0x00000000000c64c6      0xd62 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-signal.o)
+ .debug_info    0x00000000000c7228      0xa4c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-signalr.o)
+ .debug_info    0x00000000000c7c74      0xa41 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-assert.o)
+ .debug_info    0x00000000000c86b5      0xa7a /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fprintf.o)
+ .debug_info    0x00000000000c912f      0x9b6 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-malloc.o)
+ .debug_info    0x00000000000c9ae5      0xb82 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-freer.o)
+ .debug_info    0x00000000000ca667      0xc57 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_info    0x00000000000cb2be     0x1793 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-vfprintf.o)
+ .debug_info    0x00000000000cca51     0x158d /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_info    0x00000000000cdfde      0xb0c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-reent.o)
+ .debug_info    0x00000000000ceaea      0xc90 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-wbuf.o)
+ .debug_info    0x00000000000cf77a      0xbfa /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-wsetup.o)
+ .debug_info    0x00000000000d0374      0xd85 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fflush.o)
+ .debug_info    0x00000000000d10f9     0x11a8 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-findfp.o)
+ .debug_info    0x00000000000d22a1      0xf11 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fvwrite.o)
+ .debug_info    0x00000000000d31b2      0xca4 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fwalk.o)
+ .debug_info    0x00000000000d3e56      0xf64 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-makebuf.o)
+ .debug_info    0x00000000000d4dba      0x9e3 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memchr-stub.o)
+ .debug_info    0x00000000000d579d      0xf2b /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memmove.o)
+ .debug_info    0x00000000000d66c8      0x961 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-mlock.o)
+ .debug_info    0x00000000000d7029      0xb76 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_info    0x00000000000d7b9f      0xe6c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-stdio.o)
+ .debug_info    0x00000000000d8a0b      0xaa6 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-msizer.o)
 
 .debug_abbrev   0x0000000000000000    0x16dbd
  .debug_abbrev  0x0000000000000000      0x57e .build/obj_nuphy_air75_v2_ansi_via/side.o
@@ -6241,7 +6240,7 @@ LOAD linker stubs
  .debug_ranges  0x0000000000006f10       0xb8 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-findfp.o)
  .debug_ranges  0x0000000000006fc8       0x20 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fvwrite.o)
 
-.debug_line     0x0000000000000000    0x2e4c9
+.debug_line     0x0000000000000000    0x2e4d6
  .debug_line    0x0000000000000000     0x184a .build/obj_nuphy_air75_v2_ansi_via/side.o
  .debug_line    0x000000000000184a      0xfd2 .build/obj_nuphy_air75_v2_ansi_via/rf.o
  .debug_line    0x000000000000281c      0x6f1 .build/obj_nuphy_air75_v2_ansi_via/sleep.o
@@ -6280,98 +6279,98 @@ LOAD linker stubs
  .debug_line    0x0000000000013341      0x4aa .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_rgb.o
  .debug_line    0x00000000000137eb      0x55c .build/obj_nuphy_air75_v2_ansi_via/ws2812_bitbang.o
  .debug_line    0x0000000000013d47       0xbf .build/obj_nuphy_air75_v2_ansi_via/quantum/led_tables.o
- .debug_line    0x0000000000013e06      0xa7b .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
- .debug_line    0x0000000000014881      0x2f0 .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_magic.o
- .debug_line    0x0000000000014b71      0x68a .build/obj_nuphy_air75_v2_ansi_via/quantum/send_string/send_string.o
- .debug_line    0x00000000000151fb      0x8bb .build/obj_nuphy_air75_v2_ansi_via/quantum/dynamic_keymap.o
- .debug_line    0x0000000000015ab6      0x43e .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_grave_esc.o
- .debug_line    0x0000000000015ef4      0x314 .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_key_lock.o
- .debug_line    0x0000000000016208      0x4fe .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_space_cadet.o
- .debug_line    0x0000000000016706      0x18f .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_tri_layer.o
- .debug_line    0x0000000000016895      0x160 .build/obj_nuphy_air75_v2_ansi_via/quantum/tri_layer.o
- .debug_line    0x00000000000169f5      0x621 .build/obj_nuphy_air75_v2_ansi_via/protocol/host.o
- .debug_line    0x0000000000017016      0x798 .build/obj_nuphy_air75_v2_ansi_via/protocol/report.o
- .debug_line    0x00000000000177ae      0x171 .build/obj_nuphy_air75_v2_ansi_via/protocol/usb_device_state.o
- .debug_line    0x000000000001791f      0x3b0 .build/obj_nuphy_air75_v2_ansi_via/platforms/suspend.o
- .debug_line    0x0000000000017ccf      0x32e .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/platform.o
- .debug_line    0x0000000000017ffd      0x413 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/suspend.o
- .debug_line    0x0000000000018410      0x4da .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/timer.o
- .debug_line    0x00000000000188ea      0x52d .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/bootloaders/stm32_dfu.o
- .debug_line    0x0000000000018e17      0x441 .build/obj_nuphy_air75_v2_ansi_via/uart.a(uart.o)
- .debug_line    0x0000000000019258     0x1184 .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/usb_main.o
- .debug_line    0x000000000001a3dc      0x58c .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/chibios.o
- .debug_line    0x000000000001a968      0x44a .build/obj_nuphy_air75_v2_ansi_via/usb_descriptor.o
- .debug_line    0x000000000001adb2      0xd6e .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/usb_driver.o
- .debug_line    0x000000000001bb20      0x45b .build/obj_nuphy_air75_v2_ansi_via/./lib/chibios/os/oslib/src/chmemcore.o
- .debug_line    0x000000000001bf7b      0x178 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/common/startup/ARMCMx/compilers/GCC/crt1.o
- .debug_line    0x000000000001c0f3      0x5cc .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chsys.o
- .debug_line    0x000000000001c6bf      0x238 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chrfcu.o
- .debug_line    0x000000000001c8f7      0xc15 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chvt.o
- .debug_line    0x000000000001d50c      0x7d8 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chschd.o
- .debug_line    0x000000000001dce4      0x3b7 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chinstances.o
- .debug_line    0x000000000001e09b      0xedf .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chthreads.o
- .debug_line    0x000000000001ef7a      0xe5b .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chevents.o
- .debug_line    0x000000000001fdd5      0x3b1 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/common/ports/ARMv6-M/chcore.o
- .debug_line    0x0000000000020186      0x42f .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal.o
- .debug_line    0x00000000000205b5      0x4ce .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_st.o
- .debug_line    0x0000000000020a83     0x12b0 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_buffers.o
- .debug_line    0x0000000000021d33      0xea1 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_queues.o
- .debug_line    0x0000000000022bd4      0x8e9 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_serial.o
- .debug_line    0x00000000000234bd     0x17a5 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_usb.o
- .debug_line    0x0000000000024c62      0x4d5 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/common/ARMCMx/nvic.o
- .debug_line    0x0000000000025137      0x3fc .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/STM32F0xx/stm32_isr.o
- .debug_line    0x0000000000025533      0x552 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/STM32F0xx/hal_lld.o
- .debug_line    0x0000000000025a85      0x525 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.o
- .debug_line    0x0000000000025faa      0x591 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.o
- .debug_line    0x000000000002653b      0xa39 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/USARTv2/hal_serial_lld.o
- .debug_line    0x0000000000026f74      0xd20 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/USBv1/hal_usb_lld.o
- .debug_line    0x0000000000027c94      0x450 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/boards/ST_NUCLEO64_F072RB/board.o
- .debug_line    0x00000000000280e4      0x482 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/various/syscalls.o
- .debug_line    0x0000000000028566      0x34f .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/syscall-fallbacks.o
- .debug_line    0x00000000000288b5       0x68 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_sqi.o)
- .debug_line    0x000000000002891d       0x68 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
- .debug_line    0x0000000000028985       0x69 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uhi.o)
- .debug_line    0x00000000000289ee       0x6c /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
- .debug_line    0x0000000000028a5a       0x73 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
- .debug_line    0x0000000000028acd       0x60 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_line    0x0000000000028b2d       0x6b /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_ashldi3.o)
- .debug_line    0x0000000000028b98       0x6b /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
- .debug_line    0x0000000000028c03      0x1a3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
- .debug_line    0x0000000000028da6      0x244 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
- .debug_line    0x0000000000028fea       0x6a /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
- .debug_line    0x0000000000029054       0x74 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
- .debug_line    0x00000000000290c8      0x15f /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-abort.o)
- .debug_line    0x0000000000029227      0x154 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-ctype_.o)
- .debug_line    0x000000000002937b       0xe3 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
- .debug_line    0x000000000002945e      0x1c3 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcmp.o)
- .debug_line    0x0000000000029621      0x24d /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcpy-stub.o)
- .debug_line    0x000000000002986e      0x281 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
- .debug_line    0x0000000000029aef      0x221 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-rand.o)
- .debug_line    0x0000000000029d10      0x3ab /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-signal.o)
- .debug_line    0x000000000002a0bb      0x1ab /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-signalr.o)
- .debug_line    0x000000000002a266      0x18a /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-assert.o)
- .debug_line    0x000000000002a3f0      0x195 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fprintf.o)
- .debug_line    0x000000000002a585      0x16e /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-malloc.o)
- .debug_line    0x000000000002a6f3      0x2ab /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-freer.o)
- .debug_line    0x000000000002a99e      0x2f2 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-mallocr.o)
- .debug_line    0x000000000002ac90      0x72c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-vfprintf.o)
- .debug_line    0x000000000002b3bc      0x7a6 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_line    0x000000000002bb62      0x264 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-reent.o)
- .debug_line    0x000000000002bdc6      0x2cf /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-wbuf.o)
- .debug_line    0x000000000002c095      0x33d /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-wsetup.o)
- .debug_line    0x000000000002c3d2      0x44b /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fflush.o)
- .debug_line    0x000000000002c81d      0x5c8 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-findfp.o)
- .debug_line    0x000000000002cde5      0x639 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fvwrite.o)
- .debug_line    0x000000000002d41e      0x236 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fwalk.o)
- .debug_line    0x000000000002d654      0x32c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-makebuf.o)
- .debug_line    0x000000000002d980      0x212 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memchr-stub.o)
- .debug_line    0x000000000002db92      0x28a /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memmove.o)
- .debug_line    0x000000000002de1c      0x13d /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-mlock.o)
- .debug_line    0x000000000002df59      0x1b5 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-reallocr.o)
- .debug_line    0x000000000002e10e      0x253 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-stdio.o)
- .debug_line    0x000000000002e361      0x168 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-msizer.o)
+ .debug_line    0x0000000000013e06      0xa88 .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
+ .debug_line    0x000000000001488e      0x2f0 .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_magic.o
+ .debug_line    0x0000000000014b7e      0x68a .build/obj_nuphy_air75_v2_ansi_via/quantum/send_string/send_string.o
+ .debug_line    0x0000000000015208      0x8bb .build/obj_nuphy_air75_v2_ansi_via/quantum/dynamic_keymap.o
+ .debug_line    0x0000000000015ac3      0x43e .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_grave_esc.o
+ .debug_line    0x0000000000015f01      0x314 .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_key_lock.o
+ .debug_line    0x0000000000016215      0x4fe .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_space_cadet.o
+ .debug_line    0x0000000000016713      0x18f .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_tri_layer.o
+ .debug_line    0x00000000000168a2      0x160 .build/obj_nuphy_air75_v2_ansi_via/quantum/tri_layer.o
+ .debug_line    0x0000000000016a02      0x621 .build/obj_nuphy_air75_v2_ansi_via/protocol/host.o
+ .debug_line    0x0000000000017023      0x798 .build/obj_nuphy_air75_v2_ansi_via/protocol/report.o
+ .debug_line    0x00000000000177bb      0x171 .build/obj_nuphy_air75_v2_ansi_via/protocol/usb_device_state.o
+ .debug_line    0x000000000001792c      0x3b0 .build/obj_nuphy_air75_v2_ansi_via/platforms/suspend.o
+ .debug_line    0x0000000000017cdc      0x32e .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/platform.o
+ .debug_line    0x000000000001800a      0x413 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/suspend.o
+ .debug_line    0x000000000001841d      0x4da .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/timer.o
+ .debug_line    0x00000000000188f7      0x52d .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/bootloaders/stm32_dfu.o
+ .debug_line    0x0000000000018e24      0x441 .build/obj_nuphy_air75_v2_ansi_via/uart.a(uart.o)
+ .debug_line    0x0000000000019265     0x1184 .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/usb_main.o
+ .debug_line    0x000000000001a3e9      0x58c .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/chibios.o
+ .debug_line    0x000000000001a975      0x44a .build/obj_nuphy_air75_v2_ansi_via/usb_descriptor.o
+ .debug_line    0x000000000001adbf      0xd6e .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/usb_driver.o
+ .debug_line    0x000000000001bb2d      0x45b .build/obj_nuphy_air75_v2_ansi_via/./lib/chibios/os/oslib/src/chmemcore.o
+ .debug_line    0x000000000001bf88      0x178 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/common/startup/ARMCMx/compilers/GCC/crt1.o
+ .debug_line    0x000000000001c100      0x5cc .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chsys.o
+ .debug_line    0x000000000001c6cc      0x238 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chrfcu.o
+ .debug_line    0x000000000001c904      0xc15 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chvt.o
+ .debug_line    0x000000000001d519      0x7d8 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chschd.o
+ .debug_line    0x000000000001dcf1      0x3b7 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chinstances.o
+ .debug_line    0x000000000001e0a8      0xedf .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chthreads.o
+ .debug_line    0x000000000001ef87      0xe5b .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chevents.o
+ .debug_line    0x000000000001fde2      0x3b1 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/common/ports/ARMv6-M/chcore.o
+ .debug_line    0x0000000000020193      0x42f .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal.o
+ .debug_line    0x00000000000205c2      0x4ce .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_st.o
+ .debug_line    0x0000000000020a90     0x12b0 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_buffers.o
+ .debug_line    0x0000000000021d40      0xea1 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_queues.o
+ .debug_line    0x0000000000022be1      0x8e9 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_serial.o
+ .debug_line    0x00000000000234ca     0x17a5 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_usb.o
+ .debug_line    0x0000000000024c6f      0x4d5 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/common/ARMCMx/nvic.o
+ .debug_line    0x0000000000025144      0x3fc .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/STM32F0xx/stm32_isr.o
+ .debug_line    0x0000000000025540      0x552 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/STM32F0xx/hal_lld.o
+ .debug_line    0x0000000000025a92      0x525 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.o
+ .debug_line    0x0000000000025fb7      0x591 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.o
+ .debug_line    0x0000000000026548      0xa39 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/USARTv2/hal_serial_lld.o
+ .debug_line    0x0000000000026f81      0xd20 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/USBv1/hal_usb_lld.o
+ .debug_line    0x0000000000027ca1      0x450 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/boards/ST_NUCLEO64_F072RB/board.o
+ .debug_line    0x00000000000280f1      0x482 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/various/syscalls.o
+ .debug_line    0x0000000000028573      0x34f .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/syscall-fallbacks.o
+ .debug_line    0x00000000000288c2       0x68 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_sqi.o)
+ .debug_line    0x000000000002892a       0x68 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .debug_line    0x0000000000028992       0x69 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uhi.o)
+ .debug_line    0x00000000000289fb       0x6c /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_line    0x0000000000028a67       0x73 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+ .debug_line    0x0000000000028ada       0x60 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0000000000028b3a       0x6b /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_ashldi3.o)
+ .debug_line    0x0000000000028ba5       0x6b /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x0000000000028c10      0x1a3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
+ .debug_line    0x0000000000028db3      0x244 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_line    0x0000000000028ff7       0x6a /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .debug_line    0x0000000000029061       0x74 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .debug_line    0x00000000000290d5      0x15f /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-abort.o)
+ .debug_line    0x0000000000029234      0x154 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-ctype_.o)
+ .debug_line    0x0000000000029388       0xe3 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .debug_line    0x000000000002946b      0x1c3 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcmp.o)
+ .debug_line    0x000000000002962e      0x24d /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_line    0x000000000002987b      0x281 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .debug_line    0x0000000000029afc      0x221 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-rand.o)
+ .debug_line    0x0000000000029d1d      0x3ab /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-signal.o)
+ .debug_line    0x000000000002a0c8      0x1ab /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-signalr.o)
+ .debug_line    0x000000000002a273      0x18a /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-assert.o)
+ .debug_line    0x000000000002a3fd      0x195 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fprintf.o)
+ .debug_line    0x000000000002a592      0x16e /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-malloc.o)
+ .debug_line    0x000000000002a700      0x2ab /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-freer.o)
+ .debug_line    0x000000000002a9ab      0x2f2 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_line    0x000000000002ac9d      0x72c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-vfprintf.o)
+ .debug_line    0x000000000002b3c9      0x7a6 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_line    0x000000000002bb6f      0x264 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-reent.o)
+ .debug_line    0x000000000002bdd3      0x2cf /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-wbuf.o)
+ .debug_line    0x000000000002c0a2      0x33d /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-wsetup.o)
+ .debug_line    0x000000000002c3df      0x44b /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fflush.o)
+ .debug_line    0x000000000002c82a      0x5c8 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-findfp.o)
+ .debug_line    0x000000000002cdf2      0x639 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fvwrite.o)
+ .debug_line    0x000000000002d42b      0x236 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fwalk.o)
+ .debug_line    0x000000000002d661      0x32c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-makebuf.o)
+ .debug_line    0x000000000002d98d      0x212 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memchr-stub.o)
+ .debug_line    0x000000000002db9f      0x28a /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memmove.o)
+ .debug_line    0x000000000002de29      0x13d /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-mlock.o)
+ .debug_line    0x000000000002df66      0x1b5 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_line    0x000000000002e11b      0x253 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-stdio.o)
+ .debug_line    0x000000000002e36e      0x168 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-msizer.o)
 
-.debug_str      0x0000000000000000    0x10949
+.debug_str      0x0000000000000000    0x1093b
  .debug_str     0x0000000000000000     0x58f8 .build/obj_nuphy_air75_v2_ansi_via/side.o
                                        0x5c4b (size before relaxing)
  .debug_str     0x00000000000058f8      0x569 .build/obj_nuphy_air75_v2_ansi_via/rf.o
@@ -6448,176 +6447,176 @@ LOAD linker stubs
                                         0xcda (size before relaxing)
  .debug_str     0x0000000000009fed       0x15 .build/obj_nuphy_air75_v2_ansi_via/quantum/led_tables.o
                                         0x5c6 (size before relaxing)
- .debug_str     0x000000000000a002      0x5b0 .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
-                                       0x1e03 (size before relaxing)
- .debug_str     0x000000000000a5b2       0x28 .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_magic.o
+ .debug_str     0x000000000000a002      0x5a2 .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
+                                       0x1df5 (size before relaxing)
+ .debug_str     0x000000000000a5a4       0x28 .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_magic.o
                                        0x4459 (size before relaxing)
- .debug_str     0x000000000000a5da       0xb2 .build/obj_nuphy_air75_v2_ansi_via/quantum/send_string/send_string.o
+ .debug_str     0x000000000000a5cc       0xb2 .build/obj_nuphy_air75_v2_ansi_via/quantum/send_string/send_string.o
                                        0x4ed8 (size before relaxing)
- .debug_str     0x000000000000a68c       0x59 .build/obj_nuphy_air75_v2_ansi_via/quantum/dynamic_keymap.o
+ .debug_str     0x000000000000a67e       0x59 .build/obj_nuphy_air75_v2_ansi_via/quantum/dynamic_keymap.o
                                        0x4ea9 (size before relaxing)
- .debug_str     0x000000000000a6e5       0x42 .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_grave_esc.o
+ .debug_str     0x000000000000a6d7       0x42 .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_grave_esc.o
                                        0x4df9 (size before relaxing)
- .debug_str     0x000000000000a727       0x73 .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_key_lock.o
+ .debug_str     0x000000000000a719       0x73 .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_key_lock.o
                                        0x46b9 (size before relaxing)
- .debug_str     0x000000000000a79a       0x6d .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_space_cadet.o
+ .debug_str     0x000000000000a78c       0x6d .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_space_cadet.o
                                        0x4db8 (size before relaxing)
- .debug_str     0x000000000000a807       0x7b .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_tri_layer.o
+ .debug_str     0x000000000000a7f9       0x7b .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_tri_layer.o
                                        0x43bd (size before relaxing)
- .debug_str     0x000000000000a882       0x8b .build/obj_nuphy_air75_v2_ansi_via/quantum/tri_layer.o
+ .debug_str     0x000000000000a874       0x8b .build/obj_nuphy_air75_v2_ansi_via/quantum/tri_layer.o
                                         0x2d6 (size before relaxing)
- .debug_str     0x000000000000a90d      0x14b .build/obj_nuphy_air75_v2_ansi_via/protocol/host.o
+ .debug_str     0x000000000000a8ff      0x14b .build/obj_nuphy_air75_v2_ansi_via/protocol/host.o
                                        0x1477 (size before relaxing)
- .debug_str     0x000000000000aa58       0x71 .build/obj_nuphy_air75_v2_ansi_via/protocol/report.o
+ .debug_str     0x000000000000aa4a       0x71 .build/obj_nuphy_air75_v2_ansi_via/protocol/report.o
                                        0x4e97 (size before relaxing)
- .debug_str     0x000000000000aac9      0x1ad .build/obj_nuphy_air75_v2_ansi_via/protocol/usb_device_state.o
+ .debug_str     0x000000000000aabb      0x1ad .build/obj_nuphy_air75_v2_ansi_via/protocol/usb_device_state.o
                                         0x366 (size before relaxing)
- .debug_str     0x000000000000ac76       0x80 .build/obj_nuphy_air75_v2_ansi_via/platforms/suspend.o
+ .debug_str     0x000000000000ac68       0x80 .build/obj_nuphy_air75_v2_ansi_via/platforms/suspend.o
                                         0xc6e (size before relaxing)
- .debug_str     0x000000000000acf6       0x2f .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/platform.o
+ .debug_str     0x000000000000ace8       0x2f .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/platform.o
                                         0xbe4 (size before relaxing)
- .debug_str     0x000000000000ad25       0x43 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/suspend.o
+ .debug_str     0x000000000000ad17       0x43 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/suspend.o
                                        0x115e (size before relaxing)
- .debug_str     0x000000000000ad68       0xb6 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/timer.o
+ .debug_str     0x000000000000ad5a       0xb6 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/timer.o
                                         0x720 (size before relaxing)
- .debug_str     0x000000000000ae1e      0x1a1 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/bootloaders/stm32_dfu.o
+ .debug_str     0x000000000000ae10      0x1a1 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/bootloaders/stm32_dfu.o
                                         0xd89 (size before relaxing)
- .debug_str     0x000000000000afbf      0x1ee .build/obj_nuphy_air75_v2_ansi_via/uart.a(uart.o)
+ .debug_str     0x000000000000afb1      0x1ee .build/obj_nuphy_air75_v2_ansi_via/uart.a(uart.o)
                                         0xd29 (size before relaxing)
- .debug_str     0x000000000000b1ad      0x75c .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/usb_main.o
+ .debug_str     0x000000000000b19f      0x75c .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/usb_main.o
                                        0x1cd1 (size before relaxing)
- .debug_str     0x000000000000b909       0xa1 .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/chibios.o
+ .debug_str     0x000000000000b8fb       0xa1 .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/chibios.o
                                        0x1385 (size before relaxing)
- .debug_str     0x000000000000b9aa      0x761 .build/obj_nuphy_air75_v2_ansi_via/usb_descriptor.o
+ .debug_str     0x000000000000b99c      0x761 .build/obj_nuphy_air75_v2_ansi_via/usb_descriptor.o
                                        0x18cf (size before relaxing)
- .debug_str     0x000000000000c10b      0x291 .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/usb_driver.o
+ .debug_str     0x000000000000c0fd      0x291 .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/usb_driver.o
                                        0x1502 (size before relaxing)
- .debug_str     0x000000000000c39c       0xb3 .build/obj_nuphy_air75_v2_ansi_via/./lib/chibios/os/oslib/src/chmemcore.o
+ .debug_str     0x000000000000c38e       0xb3 .build/obj_nuphy_air75_v2_ansi_via/./lib/chibios/os/oslib/src/chmemcore.o
                                         0x6c3 (size before relaxing)
- .debug_str     0x000000000000c44f      0x2a8 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/common/startup/ARMCMx/compilers/GCC/crt1.o
+ .debug_str     0x000000000000c441      0x2a8 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/common/startup/ARMCMx/compilers/GCC/crt1.o
                                         0x4b1 (size before relaxing)
- .debug_str     0x000000000000c6f7      0x164 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chsys.o
+ .debug_str     0x000000000000c6e9      0x164 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chsys.o
                                         0x7f1 (size before relaxing)
- .debug_str     0x000000000000c85b       0x4d .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chrfcu.o
+ .debug_str     0x000000000000c84d       0x4d .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chrfcu.o
                                         0x5fa (size before relaxing)
- .debug_str     0x000000000000c8a8      0x1d5 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chvt.o
+ .debug_str     0x000000000000c89a      0x1d5 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chvt.o
                                         0xcc4 (size before relaxing)
- .debug_str     0x000000000000ca7d      0x1a4 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chschd.o
+ .debug_str     0x000000000000ca6f      0x1a4 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chschd.o
                                         0x851 (size before relaxing)
- .debug_str     0x000000000000cc21      0x106 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chinstances.o
+ .debug_str     0x000000000000cc13      0x106 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chinstances.o
                                         0x726 (size before relaxing)
- .debug_str     0x000000000000cd27      0x1c6 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chthreads.o
+ .debug_str     0x000000000000cd19      0x1c6 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chthreads.o
                                         0x930 (size before relaxing)
- .debug_str     0x000000000000ceed      0x1a7 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chevents.o
+ .debug_str     0x000000000000cedf      0x1a7 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chevents.o
                                         0x876 (size before relaxing)
- .debug_str     0x000000000000d094      0x297 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/common/ports/ARMv6-M/chcore.o
+ .debug_str     0x000000000000d086      0x297 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/common/ports/ARMv6-M/chcore.o
                                         0x94b (size before relaxing)
- .debug_str     0x000000000000d32b       0x4f .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal.o
+ .debug_str     0x000000000000d31d       0x4f .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal.o
                                         0xc0f (size before relaxing)
- .debug_str     0x000000000000d37a       0xfc .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_st.o
+ .debug_str     0x000000000000d36c       0xfc .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_st.o
                                         0xce3 (size before relaxing)
- .debug_str     0x000000000000d476      0x16c .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_buffers.o
+ .debug_str     0x000000000000d468      0x16c .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_buffers.o
                                        0x1339 (size before relaxing)
- .debug_str     0x000000000000d5e2       0x93 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_queues.o
+ .debug_str     0x000000000000d5d4       0x93 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_queues.o
                                        0x11a9 (size before relaxing)
- .debug_str     0x000000000000d675       0xa5 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_serial.o
+ .debug_str     0x000000000000d667       0xa5 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_serial.o
                                         0xdff (size before relaxing)
- .debug_str     0x000000000000d71a      0x282 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_usb.o
+ .debug_str     0x000000000000d70c      0x282 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_usb.o
                                        0x1419 (size before relaxing)
- .debug_str     0x000000000000d99c       0x97 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/common/ARMCMx/nvic.o
+ .debug_str     0x000000000000d98e       0x97 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/common/ARMCMx/nvic.o
                                         0xcb3 (size before relaxing)
- .debug_str     0x000000000000da33       0x83 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/STM32F0xx/stm32_isr.o
+ .debug_str     0x000000000000da25       0x83 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/STM32F0xx/stm32_isr.o
                                         0xe43 (size before relaxing)
- .debug_str     0x000000000000dab6       0xbe .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/STM32F0xx/hal_lld.o
+ .debug_str     0x000000000000daa8       0xbe .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/STM32F0xx/hal_lld.o
                                         0xca2 (size before relaxing)
- .debug_str     0x000000000000db74       0x75 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.o
+ .debug_str     0x000000000000db66       0x75 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.o
                                         0xc99 (size before relaxing)
- .debug_str     0x000000000000dbe9       0x97 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.o
+ .debug_str     0x000000000000dbdb       0x97 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.o
                                         0xdc8 (size before relaxing)
- .debug_str     0x000000000000dc80       0x7d .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/USARTv2/hal_serial_lld.o
+ .debug_str     0x000000000000dc72       0x7d .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/USARTv2/hal_serial_lld.o
                                         0xe00 (size before relaxing)
- .debug_str     0x000000000000dcfd      0x137 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/USBv1/hal_usb_lld.o
+ .debug_str     0x000000000000dcef      0x137 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/USBv1/hal_usb_lld.o
                                        0x13eb (size before relaxing)
- .debug_str     0x000000000000de34       0xae .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/boards/ST_NUCLEO64_F072RB/board.o
+ .debug_str     0x000000000000de26       0xae .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/boards/ST_NUCLEO64_F072RB/board.o
                                         0xd5d (size before relaxing)
- .debug_str     0x000000000000dee2      0x1ba .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/various/syscalls.o
+ .debug_str     0x000000000000ded4      0x1ba .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/various/syscalls.o
                                         0xc21 (size before relaxing)
- .debug_str     0x000000000000e09c       0xaa .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/syscall-fallbacks.o
+ .debug_str     0x000000000000e08e       0xaa .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/syscall-fallbacks.o
                                         0x858 (size before relaxing)
- .debug_str     0x000000000000e146       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_sqi.o)
- .debug_str     0x000000000000e1e9       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
- .debug_str     0x000000000000e1e9       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uhi.o)
- .debug_str     0x000000000000e1e9       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
- .debug_str     0x000000000000e1e9       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
- .debug_str     0x000000000000e1e9       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
- .debug_str     0x000000000000e1e9       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_ashldi3.o)
- .debug_str     0x000000000000e1e9       0x30 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+ .debug_str     0x000000000000e138       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_sqi.o)
+ .debug_str     0x000000000000e1db       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uqi.o)
+ .debug_str     0x000000000000e1db       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_thumb1_case_uhi.o)
+ .debug_str     0x000000000000e1db       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_str     0x000000000000e1db       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+ .debug_str     0x000000000000e1db       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
+ .debug_str     0x000000000000e1db       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_ashldi3.o)
+ .debug_str     0x000000000000e1db       0x30 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_aeabi_uldivmod.o)
                                          0xa3 (size before relaxing)
- .debug_str     0x000000000000e219     0x1368 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
+ .debug_str     0x000000000000e20b     0x1368 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
                                        0x1469 (size before relaxing)
- .debug_str     0x000000000000f581       0xe7 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_str     0x000000000000f573       0xe7 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
                                        0x1436 (size before relaxing)
- .debug_str     0x000000000000f668       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
- .debug_str     0x000000000000f668       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
- .debug_str     0x000000000000f668      0x1be /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-abort.o)
+ .debug_str     0x000000000000f65a       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_clzdi2.o)
+ .debug_str     0x000000000000f65a       0xa3 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_clzsi2.o)
+ .debug_str     0x000000000000f65a      0x1be /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-abort.o)
                                         0x619 (size before relaxing)
- .debug_str     0x000000000000f826      0x2f3 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-ctype_.o)
+ .debug_str     0x000000000000f818      0x2f3 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-ctype_.o)
                                         0x8f3 (size before relaxing)
- .debug_str     0x000000000000fb19       0x9c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
+ .debug_str     0x000000000000fb0b       0x9c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-impure.o)
                                         0x5db (size before relaxing)
- .debug_str     0x000000000000fbb5       0x92 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcmp.o)
+ .debug_str     0x000000000000fba7       0x92 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcmp.o)
                                         0x5df (size before relaxing)
- .debug_str     0x000000000000fc47       0xcb /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_str     0x000000000000fc39       0xcb /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcpy-stub.o)
                                         0x92d (size before relaxing)
- .debug_str     0x000000000000fd12       0x41 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .debug_str     0x000000000000fd04       0x41 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
                                         0x908 (size before relaxing)
- .debug_str     0x000000000000fd53       0x46 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-rand.o)
+ .debug_str     0x000000000000fd45       0x46 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-rand.o)
                                         0x604 (size before relaxing)
- .debug_str     0x000000000000fd99      0x102 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-signal.o)
+ .debug_str     0x000000000000fd8b      0x102 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-signal.o)
                                         0x67e (size before relaxing)
- .debug_str     0x000000000000fe9b       0x34 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-signalr.o)
+ .debug_str     0x000000000000fe8d       0x34 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-signalr.o)
                                         0x623 (size before relaxing)
- .debug_str     0x000000000000fecf       0x51 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-assert.o)
+ .debug_str     0x000000000000fec1       0x51 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-assert.o)
                                         0x61b (size before relaxing)
- .debug_str     0x000000000000ff20       0xa8 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fprintf.o)
+ .debug_str     0x000000000000ff12       0xa8 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fprintf.o)
                                         0x61a (size before relaxing)
- .debug_str     0x000000000000ffc8       0x48 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-malloc.o)
+ .debug_str     0x000000000000ffba       0x48 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-malloc.o)
                                         0x60c (size before relaxing)
- .debug_str     0x0000000000010010      0x120 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-freer.o)
+ .debug_str     0x0000000000010002      0x120 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-freer.o)
                                         0x70b (size before relaxing)
- .debug_str     0x0000000000010130       0x2a /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_str     0x0000000000010122       0x2a /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-mallocr.o)
                                         0x722 (size before relaxing)
- .debug_str     0x000000000001015a      0x256 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-vfprintf.o)
+ .debug_str     0x000000000001014c      0x256 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-vfprintf.o)
                                         0xc27 (size before relaxing)
- .debug_str     0x00000000000103b0       0x8d /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_str     0x00000000000103a2       0x8d /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-vfprintf_i.o)
                                         0xba5 (size before relaxing)
- .debug_str     0x000000000001043d       0x5e /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-reent.o)
+ .debug_str     0x000000000001042f       0x5e /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-reent.o)
                                         0x617 (size before relaxing)
- .debug_str     0x000000000001049b       0x43 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-wbuf.o)
+ .debug_str     0x000000000001048d       0x43 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-wbuf.o)
                                         0x764 (size before relaxing)
- .debug_str     0x00000000000104de       0x40 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-wsetup.o)
+ .debug_str     0x00000000000104d0       0x40 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-wsetup.o)
                                         0x75f (size before relaxing)
- .debug_str     0x000000000001051e       0x63 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fflush.o)
+ .debug_str     0x0000000000010510       0x63 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fflush.o)
                                         0x78d (size before relaxing)
- .debug_str     0x0000000000010581      0x14f /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-findfp.o)
+ .debug_str     0x0000000000010573      0x14f /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-findfp.o)
                                         0x89d (size before relaxing)
- .debug_str     0x00000000000106d0       0x65 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fvwrite.o)
+ .debug_str     0x00000000000106c2       0x65 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fvwrite.o)
                                         0x7de (size before relaxing)
- .debug_str     0x0000000000010735       0x41 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fwalk.o)
+ .debug_str     0x0000000000010727       0x41 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fwalk.o)
                                         0x751 (size before relaxing)
- .debug_str     0x0000000000010776       0x59 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-makebuf.o)
+ .debug_str     0x0000000000010768       0x59 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-makebuf.o)
                                         0x8d2 (size before relaxing)
- .debug_str     0x00000000000107cf       0x4f /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memchr-stub.o)
+ .debug_str     0x00000000000107c1       0x4f /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memchr-stub.o)
                                         0x60b (size before relaxing)
- .debug_str     0x000000000001081e       0x3e /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memmove.o)
+ .debug_str     0x0000000000010810       0x3e /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memmove.o)
                                         0x927 (size before relaxing)
- .debug_str     0x000000000001085c       0x4c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-mlock.o)
+ .debug_str     0x000000000001084e       0x4c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-mlock.o)
                                         0x607 (size before relaxing)
- .debug_str     0x00000000000108a8       0x23 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_str     0x000000000001089a       0x23 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-reallocr.o)
                                         0x708 (size before relaxing)
- .debug_str     0x00000000000108cb       0x6f /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-stdio.o)
+ .debug_str     0x00000000000108bd       0x6f /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-stdio.o)
                                         0x7a5 (size before relaxing)
- .debug_str     0x000000000001093a        0xf /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-msizer.o)
+ .debug_str     0x000000000001092c        0xf /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-msizer.o)
                                         0x6e6 (size before relaxing)
 
 .comment        0x0000000000000000       0x9f
@@ -7007,7 +7006,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000000000015bf       0x2c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-msizer.o)
 
-.debug_frame    0x0000000000000000     0x6820
+.debug_frame    0x0000000000000000     0x681c
  .debug_frame   0x0000000000000000      0x264 .build/obj_nuphy_air75_v2_ansi_via/side.o
  .debug_frame   0x0000000000000264      0x16c .build/obj_nuphy_air75_v2_ansi_via/rf.o
  .debug_frame   0x00000000000003d0       0x30 .build/obj_nuphy_air75_v2_ansi_via/sleep.o
@@ -7042,86 +7041,86 @@ LOAD linker stubs
  .debug_frame   0x000000000000340c       0x78 .build/obj_nuphy_air75_v2_ansi_via/quantum/rgb_matrix/rgb_matrix_drivers.o
  .debug_frame   0x0000000000003484       0x44 .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_rgb.o
  .debug_frame   0x00000000000034c8       0x68 .build/obj_nuphy_air75_v2_ansi_via/ws2812_bitbang.o
- .debug_frame   0x0000000000003530      0x1cc .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
- .debug_frame   0x00000000000036fc       0x2c .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_magic.o
- .debug_frame   0x0000000000003728       0xe4 .build/obj_nuphy_air75_v2_ansi_via/quantum/send_string/send_string.o
- .debug_frame   0x000000000000380c      0x174 .build/obj_nuphy_air75_v2_ansi_via/quantum/dynamic_keymap.o
- .debug_frame   0x0000000000003980       0x28 .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_grave_esc.o
- .debug_frame   0x00000000000039a8       0x44 .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_key_lock.o
- .debug_frame   0x00000000000039ec       0x4c .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_space_cadet.o
- .debug_frame   0x0000000000003a38       0x2c .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_tri_layer.o
- .debug_frame   0x0000000000003a64       0x80 .build/obj_nuphy_air75_v2_ansi_via/quantum/tri_layer.o
- .debug_frame   0x0000000000003ae4      0x120 .build/obj_nuphy_air75_v2_ansi_via/protocol/host.o
- .debug_frame   0x0000000000003c04      0x110 .build/obj_nuphy_air75_v2_ansi_via/protocol/report.o
- .debug_frame   0x0000000000003d14       0xb0 .build/obj_nuphy_air75_v2_ansi_via/protocol/usb_device_state.o
- .debug_frame   0x0000000000003dc4       0x98 .build/obj_nuphy_air75_v2_ansi_via/platforms/suspend.o
- .debug_frame   0x0000000000003e5c       0x28 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/platform.o
- .debug_frame   0x0000000000003e84       0x40 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/suspend.o
- .debug_frame   0x0000000000003ec4       0xa4 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/timer.o
- .debug_frame   0x0000000000003f68       0x80 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/bootloaders/stm32_dfu.o
- .debug_frame   0x0000000000003fe8       0xa0 .build/obj_nuphy_air75_v2_ansi_via/uart.a(uart.o)
- .debug_frame   0x0000000000004088      0x28c .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/usb_main.o
- .debug_frame   0x0000000000004314       0xf0 .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/chibios.o
- .debug_frame   0x0000000000004404       0x20 .build/obj_nuphy_air75_v2_ansi_via/usb_descriptor.o
- .debug_frame   0x0000000000004424      0x244 .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/usb_driver.o
- .debug_frame   0x0000000000004668       0x98 .build/obj_nuphy_air75_v2_ansi_via/./lib/chibios/os/oslib/src/chmemcore.o
- .debug_frame   0x0000000000004700       0x6c .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/common/startup/ARMCMx/compilers/GCC/crt1.o
- .debug_frame   0x000000000000476c       0xb0 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chsys.o
- .debug_frame   0x000000000000481c       0x30 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chrfcu.o
- .debug_frame   0x000000000000484c      0x140 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chvt.o
- .debug_frame   0x000000000000498c      0x138 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chschd.o
- .debug_frame   0x0000000000004ac4       0x40 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chinstances.o
- .debug_frame   0x0000000000004b04      0x228 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chthreads.o
- .debug_frame   0x0000000000004d2c      0x1dc .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chevents.o
- .debug_frame   0x0000000000004f08       0x48 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/common/ports/ARMv6-M/chcore.o
- .debug_frame   0x0000000000004f50       0x28 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal.o
- .debug_frame   0x0000000000004f78       0x88 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_st.o
- .debug_frame   0x0000000000005000      0x234 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_buffers.o
- .debug_frame   0x0000000000005234      0x1c0 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_queues.o
- .debug_frame   0x00000000000053f4      0x1a0 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_serial.o
- .debug_frame   0x0000000000005594      0x234 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_usb.o
- .debug_frame   0x00000000000057c8       0x94 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/common/ARMCMx/nvic.o
- .debug_frame   0x000000000000585c       0x88 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/STM32F0xx/stm32_isr.o
- .debug_frame   0x00000000000058e4       0x38 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/STM32F0xx/hal_lld.o
- .debug_frame   0x000000000000591c       0x40 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.o
- .debug_frame   0x000000000000595c       0x58 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.o
- .debug_frame   0x00000000000059b4       0x8c .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/USARTv2/hal_serial_lld.o
- .debug_frame   0x0000000000005a40      0x198 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/USBv1/hal_usb_lld.o
- .debug_frame   0x0000000000005bd8       0x48 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/boards/ST_NUCLEO64_F072RB/board.o
- .debug_frame   0x0000000000005c20       0xf8 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/various/syscalls.o
- .debug_frame   0x0000000000005d18      0x128 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/syscall-fallbacks.o
- .debug_frame   0x0000000000005e40       0x20 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
- .debug_frame   0x0000000000005e60       0x20 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
- .debug_frame   0x0000000000005e80       0x34 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
- .debug_frame   0x0000000000005eb4       0x3c /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
- .debug_frame   0x0000000000005ef0       0x28 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-abort.o)
- .debug_frame   0x0000000000005f18       0x2c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcmp.o)
- .debug_frame   0x0000000000005f44       0x34 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcpy-stub.o)
- .debug_frame   0x0000000000005f78       0x30 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
- .debug_frame   0x0000000000005fa8       0x48 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-rand.o)
- .debug_frame   0x0000000000005ff0       0xf4 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-signal.o)
- .debug_frame   0x00000000000060e4       0x44 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-signalr.o)
- .debug_frame   0x0000000000006128       0x44 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-assert.o)
- .debug_frame   0x000000000000616c       0x48 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fprintf.o)
- .debug_frame   0x00000000000061b4       0x40 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-malloc.o)
- .debug_frame   0x00000000000061f4       0x2c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-freer.o)
- .debug_frame   0x0000000000006220       0x30 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-mallocr.o)
- .debug_frame   0x0000000000006250       0xa4 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-vfprintf.o)
- .debug_frame   0x00000000000062f4       0x64 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-vfprintf_i.o)
- .debug_frame   0x0000000000006358       0x48 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-reent.o)
- .debug_frame   0x00000000000063a0       0x48 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-wbuf.o)
- .debug_frame   0x00000000000063e8       0x2c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-wsetup.o)
- .debug_frame   0x0000000000006414       0x68 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fflush.o)
- .debug_frame   0x000000000000647c      0x14c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-findfp.o)
- .debug_frame   0x00000000000065c8       0x3c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fvwrite.o)
- .debug_frame   0x0000000000006604       0x5c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fwalk.o)
- .debug_frame   0x0000000000006660       0x50 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-makebuf.o)
- .debug_frame   0x00000000000066b0       0x2c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memchr-stub.o)
- .debug_frame   0x00000000000066dc       0x34 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memmove.o)
- .debug_frame   0x0000000000006710       0x30 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-mlock.o)
- .debug_frame   0x0000000000006740       0x30 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-reallocr.o)
- .debug_frame   0x0000000000006770       0x90 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-stdio.o)
- .debug_frame   0x0000000000006800       0x20 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-msizer.o)
+ .debug_frame   0x0000000000003530      0x1c8 .build/obj_nuphy_air75_v2_ansi_via/quantum/via.o
+ .debug_frame   0x00000000000036f8       0x2c .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_magic.o
+ .debug_frame   0x0000000000003724       0xe4 .build/obj_nuphy_air75_v2_ansi_via/quantum/send_string/send_string.o
+ .debug_frame   0x0000000000003808      0x174 .build/obj_nuphy_air75_v2_ansi_via/quantum/dynamic_keymap.o
+ .debug_frame   0x000000000000397c       0x28 .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_grave_esc.o
+ .debug_frame   0x00000000000039a4       0x44 .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_key_lock.o
+ .debug_frame   0x00000000000039e8       0x4c .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_space_cadet.o
+ .debug_frame   0x0000000000003a34       0x2c .build/obj_nuphy_air75_v2_ansi_via/quantum/process_keycode/process_tri_layer.o
+ .debug_frame   0x0000000000003a60       0x80 .build/obj_nuphy_air75_v2_ansi_via/quantum/tri_layer.o
+ .debug_frame   0x0000000000003ae0      0x120 .build/obj_nuphy_air75_v2_ansi_via/protocol/host.o
+ .debug_frame   0x0000000000003c00      0x110 .build/obj_nuphy_air75_v2_ansi_via/protocol/report.o
+ .debug_frame   0x0000000000003d10       0xb0 .build/obj_nuphy_air75_v2_ansi_via/protocol/usb_device_state.o
+ .debug_frame   0x0000000000003dc0       0x98 .build/obj_nuphy_air75_v2_ansi_via/platforms/suspend.o
+ .debug_frame   0x0000000000003e58       0x28 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/platform.o
+ .debug_frame   0x0000000000003e80       0x40 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/suspend.o
+ .debug_frame   0x0000000000003ec0       0xa4 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/timer.o
+ .debug_frame   0x0000000000003f64       0x80 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/bootloaders/stm32_dfu.o
+ .debug_frame   0x0000000000003fe4       0xa0 .build/obj_nuphy_air75_v2_ansi_via/uart.a(uart.o)
+ .debug_frame   0x0000000000004084      0x28c .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/usb_main.o
+ .debug_frame   0x0000000000004310       0xf0 .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/chibios.o
+ .debug_frame   0x0000000000004400       0x20 .build/obj_nuphy_air75_v2_ansi_via/usb_descriptor.o
+ .debug_frame   0x0000000000004420      0x244 .build/obj_nuphy_air75_v2_ansi_via/protocol/chibios/usb_driver.o
+ .debug_frame   0x0000000000004664       0x98 .build/obj_nuphy_air75_v2_ansi_via/./lib/chibios/os/oslib/src/chmemcore.o
+ .debug_frame   0x00000000000046fc       0x6c .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/common/startup/ARMCMx/compilers/GCC/crt1.o
+ .debug_frame   0x0000000000004768       0xb0 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chsys.o
+ .debug_frame   0x0000000000004818       0x30 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chrfcu.o
+ .debug_frame   0x0000000000004848      0x140 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chvt.o
+ .debug_frame   0x0000000000004988      0x138 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chschd.o
+ .debug_frame   0x0000000000004ac0       0x40 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chinstances.o
+ .debug_frame   0x0000000000004b00      0x228 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chthreads.o
+ .debug_frame   0x0000000000004d28      0x1dc .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/rt/src/chevents.o
+ .debug_frame   0x0000000000004f04       0x48 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/common/ports/ARMv6-M/chcore.o
+ .debug_frame   0x0000000000004f4c       0x28 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal.o
+ .debug_frame   0x0000000000004f74       0x88 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_st.o
+ .debug_frame   0x0000000000004ffc      0x234 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_buffers.o
+ .debug_frame   0x0000000000005230      0x1c0 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_queues.o
+ .debug_frame   0x00000000000053f0      0x1a0 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_serial.o
+ .debug_frame   0x0000000000005590      0x234 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/src/hal_usb.o
+ .debug_frame   0x00000000000057c4       0x94 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/common/ARMCMx/nvic.o
+ .debug_frame   0x0000000000005858       0x88 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/STM32F0xx/stm32_isr.o
+ .debug_frame   0x00000000000058e0       0x38 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/STM32F0xx/hal_lld.o
+ .debug_frame   0x0000000000005918       0x40 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.o
+ .debug_frame   0x0000000000005958       0x58 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.o
+ .debug_frame   0x00000000000059b0       0x8c .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/USARTv2/hal_serial_lld.o
+ .debug_frame   0x0000000000005a3c      0x198 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/ports/STM32/LLD/USBv1/hal_usb_lld.o
+ .debug_frame   0x0000000000005bd4       0x48 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/hal/boards/ST_NUCLEO64_F072RB/board.o
+ .debug_frame   0x0000000000005c1c       0xf8 .build/obj_nuphy_air75_v2_ansi_via/lib/chibios/os/various/syscalls.o
+ .debug_frame   0x0000000000005d14      0x128 .build/obj_nuphy_air75_v2_ansi_via/platforms/chibios/syscall-fallbacks.o
+ .debug_frame   0x0000000000005e3c       0x20 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivsi3.o)
+ .debug_frame   0x0000000000005e5c       0x20 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_divsi3.o)
+ .debug_frame   0x0000000000005e7c       0x34 /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_muldi3.o)
+ .debug_frame   0x0000000000005eb0       0x3c /usr/lib/gcc/arm-none-eabi/8.3.1/thumb/v6-m/nofp/libgcc.a(_udivmoddi4.o)
+ .debug_frame   0x0000000000005eec       0x28 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-abort.o)
+ .debug_frame   0x0000000000005f14       0x2c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcmp.o)
+ .debug_frame   0x0000000000005f40       0x34 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x0000000000005f74       0x30 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memset.o)
+ .debug_frame   0x0000000000005fa4       0x48 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-rand.o)
+ .debug_frame   0x0000000000005fec       0xf4 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-signal.o)
+ .debug_frame   0x00000000000060e0       0x44 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-signalr.o)
+ .debug_frame   0x0000000000006124       0x44 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-assert.o)
+ .debug_frame   0x0000000000006168       0x48 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fprintf.o)
+ .debug_frame   0x00000000000061b0       0x40 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-malloc.o)
+ .debug_frame   0x00000000000061f0       0x2c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-freer.o)
+ .debug_frame   0x000000000000621c       0x30 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-mallocr.o)
+ .debug_frame   0x000000000000624c       0xa4 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-vfprintf.o)
+ .debug_frame   0x00000000000062f0       0x64 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-vfprintf_i.o)
+ .debug_frame   0x0000000000006354       0x48 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-reent.o)
+ .debug_frame   0x000000000000639c       0x48 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-wbuf.o)
+ .debug_frame   0x00000000000063e4       0x2c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-wsetup.o)
+ .debug_frame   0x0000000000006410       0x68 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fflush.o)
+ .debug_frame   0x0000000000006478      0x14c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-findfp.o)
+ .debug_frame   0x00000000000065c4       0x3c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fvwrite.o)
+ .debug_frame   0x0000000000006600       0x5c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-fwalk.o)
+ .debug_frame   0x000000000000665c       0x50 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-makebuf.o)
+ .debug_frame   0x00000000000066ac       0x2c /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memchr-stub.o)
+ .debug_frame   0x00000000000066d8       0x34 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-memmove.o)
+ .debug_frame   0x000000000000670c       0x30 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-mlock.o)
+ .debug_frame   0x000000000000673c       0x30 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-reallocr.o)
+ .debug_frame   0x000000000000676c       0x90 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-stdio.o)
+ .debug_frame   0x00000000000067fc       0x20 /usr/lib/gcc/arm-none-eabi/8.3.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libg_nano.a(lib_a-nano-msizer.o)
 
 Cross Reference Table
 

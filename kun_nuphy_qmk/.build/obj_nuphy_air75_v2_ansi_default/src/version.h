@@ -1,4 +1,4 @@
-// Copyright 2024 QMK
+// Copyright 2025 QMK
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 /*******************************************************************************
@@ -26,7 +26,7 @@
 #pragma once
 
 #define QMK_VERSION "NA"
-#define QMK_BUILDDATE "2024-08-24-13:57:37"
+#define QMK_BUILDDATE "2025-06-21-14:38:02"
 #define QMK_GIT_HASH  "NA"
 #define CHIBIOS_VERSION "NA"
 #define CHIBIOS_CONTRIB_VERSION "NA"
